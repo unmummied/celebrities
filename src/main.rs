@@ -1,5 +1,5 @@
 // This implementation is based on the algorithm described in:
-// "Pearls of Functional Algorithm Design" by Richard Bird, Cambridge University Press , ISBN: 9780511763199
+// "Pearls of Functional Algorithm Design" by Richard Bird, Cambridge University Press, ISBN: 9780511763199
 // Reference: Chapter 9, Page 56 -- Finding celebrities
 
 mod clique;
