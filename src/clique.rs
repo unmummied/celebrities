@@ -32,7 +32,6 @@ pub trait Clique: Sized {
 }
 
 impl Clique for HashSet<Person> {
-    /// A clique is a set of nodes in which each pair of nodes has an arc in both directions between them.
     fn is_clique(&self) -> bool {
         let clique = self.iter().map(|member| member.id).collect::<HashSet<_>>();
         self.iter().all(|member| {

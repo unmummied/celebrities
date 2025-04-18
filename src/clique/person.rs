@@ -23,11 +23,11 @@ where
     V: IntoIterator<Item = N>,
     N: Into<usize>,
 {
-    fn from((id, knows): (N, V)) -> Self {
+    fn from((id, known_people): (N, V)) -> Self {
         let id = id.into();
         Self {
             id,
-            known_people: knows
+            known_people: known_people
                 .into_iter()
                 .map(Into::into)
                 .filter(|people_id| *people_id != id) // remove myself.
